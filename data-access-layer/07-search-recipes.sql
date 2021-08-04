@@ -23,3 +23,6 @@
 
 
 -- YOUR CODE HERE
+select id, title, updated
+from recipes
+where lower(title) like lower($1);

@@ -17,3 +17,7 @@
 
 
 -- YOUR CODE HERE
+insert into recipes (title)
+values
+($1)
+returning id;

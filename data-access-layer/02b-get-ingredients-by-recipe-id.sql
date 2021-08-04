@@ -22,7 +22,6 @@
 -- FROM «one of the tables»
 -- JOIN «other table» ON («one of the relationship columns» = «other relationship column»)
 -- WHERE ... (here you'll use the $1 parameter)
---
 -- For example, using JOIN on a table named "weather" and "cities" to get the
 -- weather records for each city record, you would write:
 --
@@ -39,3 +38,7 @@
 
 
 -- YOUR CODE HERE
+select amount, food_stuff, units_of_measure.name
+from ingredients
+join units_of_measure on (units_of_measure.id = unit_of_measure_id)
+where recipe_id = $1;

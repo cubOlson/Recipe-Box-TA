@@ -43,3 +43,14 @@
 
 
 -- YOUR CODE HERE
+insert into instructions (list_order, specification, recipe_id)
+values
+(
+    (
+        select coalesce(max(list_order), 1) + 1
+        from instructions
+        where recipe_id = $2
+    ),
+    $1,
+    $2
+)

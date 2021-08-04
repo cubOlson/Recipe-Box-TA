@@ -16,3 +16,7 @@
 
 
 -- YOUR CODE HERE
+select id, title, updated
+from recipes
+order by updated desc
+limit 10
