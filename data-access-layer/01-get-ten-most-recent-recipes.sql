@@ -19,4 +19,4 @@
 select id, title, updated
 from recipes
 order by updated desc
-limit 10
+limit 10;

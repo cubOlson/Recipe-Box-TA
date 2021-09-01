@@ -19,4 +19,4 @@
 -- YOUR CODE HERE
 select id, title, created, updated
 from recipes
-where id = $1
+where id = $1;
